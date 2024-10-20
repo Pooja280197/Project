@@ -1,2 +1,2 @@
-# Project
+# CODING
 Its a public repository
