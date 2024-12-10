@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    
+}
+header{
+    font-family: "Parkinsans", sans-serif; 
+    height: 12vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 4px 15px rgb(223, 221, 221) ;
+  /* transition: top 0.3s; */
+  z-index: 1;
+  background-color:white;
+
+}
+.logo{
+    padding: 5px;
+    margin-left: 30px;
+}
+.logo img{
+    margin: 0;
+    height: 10vh;
+    /* padding: 2px; */
+    
+}
+.nav-options{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.nav-options ul{
+    list-style: none;
+    display: flex;
+    gap: 4vw;
+    font-size: 1.5vw;
+    align-items: center;
+     padding: 0 4vw;
+   
+
+    
+    
+    
+    
+}
+.nav-options li:hover{
+    color: rgb(42, 87, 165);
+    cursor: pointer;
+    
+    
+}
+.nav-options li:active{
+    color: brown;
+
+}
+
+@media (width<765px){
+    .nav-options li{
+        /* display:none; */
+    }
+   
+    .nav-options ul{
+        
+        list-style: none;
+        display: flex;
+        gap: 4vw;
+        font-size: 2vw;
+        align-items: center;
+         padding: 0 4vw;
+        
+    }
+}
+@media (max-width: 425px) {
+    .nav-options ul{
+        
+        list-style: none;
+        display: flex;
+        gap: 4vw;
+        font-size: 2.5vw;
+        align-items: center;
+         padding: 0 4vw;
+        
+    }
+
+}

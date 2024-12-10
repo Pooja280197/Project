@@ -1,0 +1,145 @@
+.template1{
+    --background: rgba(1, 45, 58, 0.925);
+}
+    
+   
+
+  
+.a4page {
+    width: 210mm;
+    height: 297mm;
+    margin: 10px auto; /* Center the page horizontally */
+    /* padding: 20mm; */
+     /* Add padding for content */
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    font-family: "Work Sans", sans-serif;
+}
+@media print {
+    .a4-page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0; /* Remove any extra margins */
+        box-shadow: none; /* Remove shadow for print */
+    }
+}
+.t1leftside{
+    position: absolute;
+    height:297mm;
+    width: 70mm;
+    
+
+    background-color: var(--background);
+    /* background-color: rgba(0, 73, 80, 0.925); */
+}
+.t1contact{
+    position: absolute;
+    text-align: left;
+    color: white;
+    margin: 50px 20px;
+    line-height: 25px;
+}
+.t1contact i{
+    font-style: normal;
+    font-size: 13px;
+    
+    
+}
+.template1 h3{
+    text-decoration: underline;
+    font-size: 25px;
+    /* margin-left: 30px; */
+    /* color: white; */
+}
+.t1leftside p{
+    font-size: 13px;
+    margin-top: 15px;
+}
+.t1tech{
+
+    /* position: absolute; */
+    text-align: left;
+    color: white;
+    margin: 270px 0px;
+    
+}
+.t1tech h3{
+    margin-left: 20px;
+}
+.t1tech ul{
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    
+}
+.t1tech li{
+    margin-top: 15px;
+    margin-left: 18px;
+}
+.t1lang{
+    margin-top: 40px;
+}
+.t1lang ul{
+    list-style: none;
+}
+.t1skills{
+    margin-top: 40px;
+}
+.t1rightside{
+    position: absolute;
+    height:297mm;
+    width: 124mm;
+    /* background-color: brown; */
+    margin-left: 290px;
+    color: var(--background);
+}
+.t1head{
+    margin: 20px 0px 10px 0px;
+    background-color: rgba(239, 239, 239, 0.652);
+    height: 35mm;
+    text-align: center;
+    padding: 25px;
+
+}
+.t1head h2{
+     font-weight: 400;
+     margin-top: 5px;
+     
+}
+.t1rightside h3{
+   margin-top: 20px;
+
+}
+.t1obj p{
+    font-size: 14px;
+}
+.t1exp{
+    margin-top: 10px;
+    display: inline-block;
+    
+}
+.t1expdesc{
+    font-size: 14px;
+}
+.t1edu {
+    margin-top: 8px;
+}
+.t1edu p{
+    font-size: 17px;
+}
+.t1project h4{
+    margin-top: 15px;
+}
+.t1ptech{
+    font-size: 18px;
+    font-weight: 600;
+}
+.template1 h3{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+
+
+
+

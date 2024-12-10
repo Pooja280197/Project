@@ -1,0 +1,86 @@
+.t7upper{
+    width: 210mm;
+    height: 50mm;
+    background-color: rgb(55, 55, 55);
+    
+    color: white;
+}
+.t7name{
+    width: 200mm;
+    padding-left: 20px;
+    padding-top: 10px;
+
+}
+.t7upper h1{
+    font-size: 45px;
+}
+.t7upper h3{
+    margin-top: 7px;
+    font-size: 23px;
+}
+.t7upper hr{
+    margin-top: 10px;
+}
+.t7contact{
+    width: 200mm;
+    
+    background-color: var(--color);
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    padding: 7px;
+}
+.t7contact i{
+    font-size: 13px;
+margin-left: 5px;
+}
+.t7heading{
+    
+    color:  rgb(55, 55, 55);
+    font-weight: 600;
+    margin-top: 30px;
+}
+.template7 li{
+    line-height: 25px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 100;
+}
+.t7lower{
+    
+    display: flex;
+    flex-direction: column;
+}
+.t7left{
+    position: absolute;
+     width: 520px;
+     height: 935px;
+     background-color: rgb(218, 216, 216);
+     
+}
+.t7right{
+    margin-left: 520px;
+    width: 500px;
+}
+.t7head4{
+    margin-top: 10px;
+    font-size: 16px;
+    color:rgba(21, 21, 21, 0.832); ;
+
+}
+.t7head5
+{
+    font-size: 14px;
+    color:rgba(40, 40, 40, 0.89) ;
+
+}
+.t7para{
+    
+        font-size: 14px;
+        font-weight: 100;
+    
+    
+}
+.t7block{
+    margin-left: 15px;
+}

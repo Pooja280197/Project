@@ -1,0 +1,121 @@
+
+.a4page {
+    width: 210mm;
+    height: 297mm;
+    margin: 10px auto; /* Center the page horizontally */
+    /* padding: 20mm; */
+     /* Add padding for content */
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    font-family: "Work Sans", sans-serif;
+    position: relative;
+}
+@media print {
+    .a4-page {
+        width: 210mm;
+        height: 297mm;
+        margin: 0; /* Remove any extra margins */
+        box-shadow: none; /* Remove shadow for print */
+    }
+}
+
+.t8upper{
+    width: 170mm;
+    position: absolute;
+    margin-top:40px ;
+     margin-left: 10%;
+     text-align: center;
+     line-height: 20px;
+      
+}
+.t8upper i{
+    /* margin-top: 20px; */
+    margin-left: 15px;
+}
+.t8upper h3{
+ margin-top: 10px;
+    color: rgb(84, 83, 82);
+    font-weight: 500;
+}
+.t8name{
+    color: rgba(24, 23, 23, 0.878);
+}
+.t8contact{
+    margin-top: 10px;
+}
+.t8lower{
+    margin-left: 25px;
+    position: absolute;
+    margin-top: 160px;
+    text-align: left;
+}
+.t8heading{
+    
+    color: rgba(24, 23, 23, 0.878);
+    font-size: 17px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    background-color: rgba(209, 209, 209, 0.279);
+
+}
+.t8obj{
+    padding: 10px;
+    margin-top: 5px;
+    width: 200mm;
+    border-left: 2px solid  rgb(137, 136, 136);
+    font-size: 14px;
+
+}
+.t8para{
+    font-size: 14px;
+    font-weight: 100;
+
+}
+.t8description{
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 5px;
+    width: 200mm;
+    border-left: 2px solid  rgb(137, 136, 136);
+    
+}
+.t8head4{
+    margin-top: 10px;
+    font-size: 16px;
+    color:rgba(21, 21, 21, 0.832); ;
+
+}
+.t8head5
+{
+    font-size: 14px;
+    color:rgba(40, 40, 40, 0.89) ;
+
+}
+.t8skills{
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 200px;
+    /* border-left: 2px solid  rgb(137, 136, 136); */
+}
+.t8skills ul{
+    /* border-left: 2px solid  rgb(137, 136, 136); */
+
+}
+.t8li{
+
+    padding-top: 5px;
+    line-height: 20px;
+    list-style: none;
+    text-align: left;
+    /* margin-left: -25px; */
+    
+}
+.t8tech{
+    border-left: 2px solid  rgb(137, 136, 136);
+}
+
+
+

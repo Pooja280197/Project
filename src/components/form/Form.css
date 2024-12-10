@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  /* Add padding to containers */
+  .container {
+    font-family: "Parkinsans", sans-serif; 
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    
+  }
+  .formhead{
+    text-align: center;
+  }
+  legend{
+    background-color: rgb(140, 142, 142);
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+
+  }
+  
+  
+  /* Full-width input fields */
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    box-shadow: 2px 5px 15px rgb(200, 198, 198);
+  }
+  
+  input:focus, textarea:focus {
+    background-color: #ddd;
+    outline: none;
+    
+  }
+  
+  textarea {
+    height: 80px;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #270707;
+    margin-bottom: 25px;
+  }
+  
+  /* Submit button */
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Grid container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  /* Form block */
+  .formblock {
+    margin-top: 60px;
+    /* border: 2px solid rgb(9, 8, 9); */
+    display: flex;
+    flex-direction: column;
+    /* background-color: #aba7a7d4; */
+    background-color: rgba(126, 171, 211, 0.249);
+    /* box-shadow: 2px 5px 5px rgba(38, 130, 210, 0.929),2px 5px 10px rgba(38, 130, 210, 0.929); */
+    padding: 20px;
+  }
+  
+  .labels {
+    display: block;
+    background-color: rgb(140, 142, 142);
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+  }
+  
+  /* Flex show */
+  .flexshow {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .formleft, .formright {
+    width: 100%;
+  }
+  
+  .flexskills, .formskill {
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* justify-content: space-between; */
+    
+  }
+  .formskill input{
+    width: 29vw;
+  }
+  
+  .formadd, .formremove {
+    margin-left: 10px;
+    padding: 8px;
+    width: 90px;
+    margin-bottom: 10px;
+  }
+  .formadd{
+    background-color: rgba(52, 136, 209, 0.984);
+    border: none;
+    color: white;
+  }
+  .formremove{
+    background-color: rgba(209, 115, 52, 0.938);
+    border: none;
+    color: white;
+  
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .flexshow {
+      flex-direction: column;
+    }
+  
+    .formleft, .formright {
+      width: 100%;
+    }
+
+    .flexskills, .formskill {
+
+      display: flex;
+      flex-direction: column;
+    }
+    .formskill input{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .labels {
+      font-size: 16px;
+      padding: 8px;
+    }
+  
+    .registerbtn {
+      padding: 12px 16px;
+    }
+  
+    textarea {
+      height: 60px;
+    }
+  }
+  

@@ -1,0 +1,108 @@
+.template4{
+    --bgcolor: rgb(3, 187, 219);
+    --textcolor:rgba(0, 0, 0, 0.81);
+
+
+}
+.t4upper{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 200mm;
+    position: absolute;
+    display: flex;
+    gap: 90px;
+    
+    /* background-color: blue; */
+
+}
+.t4upper i{
+    display: flex;
+    margin-top: 10px;
+    column-gap: 10px;
+    color:var(--textcolor);
+    font-weight: 600;
+  
+
+}
+.namehead{
+    width: 500px;
+    background-color:var(--bgcolor);
+    text-align: right;
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 5px 8px rgb(0, 136, 255);
+    border-radius: 5px;
+
+}
+.t4obj{
+    
+    font-size: 14px;
+   padding: 10px;
+    background-color: rgb(241, 238, 238);
+
+}
+.t4lower{
+    margin-left: 20px;
+    position: absolute;
+    width: 200mm;
+    /* background-color: aqua; */
+    margin-top: 180px;
+}
+.t4block{
+    /* margin-left: 50px; */
+      margin-top: 20px;
+      display: flex;
+      column-gap: 35px;
+}
+.t4heading{
+    background-color: var(--bgcolor);
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    height: 30px;
+    width:120px;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 2px 5px 8px rgb(0, 136, 255);
+    
+   
+}
+.t4desc{
+    width: 590px;
+    font-size: 14px;
+    font-weight: 100;
+}
+.t4head4{
+    margin-top: 10px;
+    font-size: 16px;
+    color:rgba(21, 21, 21, 0.832); ;
+    color: var(--bgcolor);
+    text-shadow: 2px 2px 8px rgb(212, 212, 212);
+}
+.t4para{
+    font-size: 14px;
+    font-weight: 100;
+
+}
+.t4head5
+{
+    font-size: 14px;
+    color:rgba(40, 40, 40, 0.89) ;
+
+}
+.t4skillsblock ul{
+    list-style: none;
+    margin-left: 25px;
+}
+.t4skillsblock li{
+    list-style: none;
+    margin-top: 8px;
+    margin-left: 5px;
+    font-size: 13px;
+}
+.t4skillsblock{
+    /* margin-left: 50px; */
+      margin-top: 20px;
+      display: flex;
+    
+}

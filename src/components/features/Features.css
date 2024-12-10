@@ -1,0 +1,105 @@
+.features {
+  margin: 10vh 10px;
+  margin-bottom: 0;
+  /* padding:5px 10px; */
+  text-align: center;
+  font-family: "Parkinsans", sans-serif; 
+ 
+}
+
+.feature-explanation {
+  background-color: rgba(186, 224, 246, 0.471);
+  padding: 60px 20px;
+  max-width: 100%;
+  height: min-content;
+}
+
+.feature-text {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  max-height: 600px;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: center;
+  row-gap: 2vw;
+  column-gap: 4vh;
+}
+.features h1{
+  font-size: 2rem;
+  text-align: center;
+  background-color:  rgba(6, 100, 171, 0.322);
+}
+.feature-text h2 {
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
+.cards p {
+  text-align: left;
+  font-size: 1.2vw;
+  /* display: none; */
+}
+.cards {
+  background-color: rgba(235, 243, 248, 0.964);
+  height: 25vh;
+  max-width: 30vw;
+  align-self: center;
+  padding: 15px;
+  box-shadow: 3px 4px 10px rgb(6, 99, 171);
+}
+.cards:hover {
+  color: white;
+  background-color: cadetblue;
+}
+@media (max-width: 1200px){
+  .feature-text h2 {
+    font-size: 2.2vw; /* Adjust text size */
+  }
+  .feature-text p {
+    font-size: 1.5vw; /* Adjust text size */
+  }
+
+}
+
+@media (max-width: 768px) {
+  .feature-text {
+    flex-direction: row; /* Stack cards vertically */
+    align-items: center;
+    max-height: fit-content;
+  }
+
+  .cards {
+    max-width: 60vw;
+    height: 20vh;
+  }
+  .features h1 {
+    font-size: 4vw;
+  }
+  .feature-text h2 {
+    font-size: 3vw; /* Adjust text size */
+  }
+  .feature-text p {
+    font-size: 2vw; /* Adjust text size */
+  }
+}
+@media (max-width: 480px) {
+  .feature-explanation {
+    padding: 40px 10px; /* Adjust padding */
+  }
+
+  .cards {
+    max-width: 90%; /* Almost full-width cards */
+    height: auto; /* Allow cards to adjust height */
+  }
+
+  .feature-text h2 {
+    font-size: 3vw; /* Adjust text size */
+  }
+  .feature-text p {
+    font-size: 2.5vw; /* Adjust text size */
+  }
+
+}
