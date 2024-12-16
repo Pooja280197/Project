@@ -1,0 +1,241 @@
+.allheading {
+    width: 100%;
+    text-align: center; 
+    margin-top: 20px;
+    /* color: rgba(67, 66, 66, 0.91); */
+    font-size: 1.5vw;
+    padding:0 40px;
+}
+.allheading h1{
+
+}
+.allheading p{
+    font-size: 1.5vw;
+    
+}
+.temps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(186, 224, 246, 0.471);
+}
+.alltemps{
+    margin-top: 20px;
+    width: 100%;
+    /* margin: 80px 20px 60px 150px; */
+    display: flex;
+    column-gap: 2vw;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+    flex-wrap: wrap;
+   
+    /* background-color: rgba(213, 215, 216, 0.249); ; */
+
+}
+.containers{
+    /* padding: 30px; */
+    /* margin-left: 60px; */
+
+    margin: 2%;
+    display: flex;
+    height: 80vh;
+    width: 30vw;
+
+   
+    background-color: rgb(1, 52, 53);
+    position: relative;
+    
+    
+}
+.containers img{
+    box-shadow: 2px 5px 8px rgba(2, 117, 194, 0.927); ;
+    height: 80vh;
+    width: 30vw;
+
+}
+
+.usebutton{
+    /* position: absolute;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px; */
+    position: absolute;
+    height: 50px;
+    padding: 5px;
+    margin-top: 40px;
+    width: 200px;
+    font-size: 1.2rem;
+    background-color: rgb(1, 52, 53);
+    color: white;
+    border-radius: 20px;
+    border: none;   
+    box-shadow: 1px 8px 8px 5px rgba(119, 118, 118, 0.714);
+    cursor: pointer;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: none;
+
+  }
+  
+  .containers:hover .usebutton{
+    display: block;
+    background-color: rgb(1, 52, 53);
+    
+  }
+  .containers:hover img{
+    opacity: 0.8;
+    
+  }
+ 
+  @media (max-width:320px){
+    .allheading {
+        font-size: 1.5vw;
+        padding:0 20px;
+        margin-top: 20px;
+
+    }
+
+    .containers{
+       
+        display: flex;
+        height:30vh;
+        width: 35vw;
+        
+     
+        
+    }
+    .containers img{
+        box-shadow: 2px 5px 8px rgba(2, 117, 194, 0.927); ;
+        height: 30vh;/* height: 250px;
+        width: 200px; */
+        width: 35vw;
+    }
+    .usebutton{
+       
+        height: 15px;
+        padding: 5px;
+      
+        width: 70px;
+        font-size: 0.4rem;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,0);
+
+
+
+    }
+    
+
+  }
+
+  @media (320px<width< 426px) {
+    .containers{
+        /* padding: 30px; */
+        /* margin-left: 10px; */
+        display: flex;
+        height:30vh;
+        width: 40vw;
+        /* height: 250px;
+        width: 200px; */
+       
+        /* background-color: aqua; */
+        /* position: relative; */
+        
+        
+    }
+    .containers img{
+        box-shadow: 2px 5px 8px rgba(2, 117, 194, 0.927); ;
+        height: 30vh;/* height: 250px;
+        width: 200px; */
+        width: 40vw;
+    }
+    .usebutton{
+       
+        height: 15px;
+        padding: 5px;
+      
+        width: 70px;
+        font-size: 0.4rem;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,0);
+
+
+
+    }
+    
+    
+
+  }
+  @media (426px<width<800px){
+    .containers{
+       
+        display: flex;
+        height:40vh;
+        width: 25vw;
+        
+     
+        
+    }
+    .containers img{
+
+        height: 40vh;/* height: 250px;
+        width: 200px; */
+        width: 25vw;
+    }
+    .usebutton{
+       
+        height: 15px;
+        padding: 5px;
+      
+        width: 70px;
+        font-size: 0.4rem;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,0);
+
+
+
+    }
+    
+
+  }
+  @media (800px<width<1400px){
+    .containers{
+       
+        display: flex;
+        height:55vh;
+        width: 20vw;
+        
+     
+        
+    }
+    .containers img{
+
+        height: 55vh;/* height: 250px;
+        width: 200px; */
+        width: 20vw;
+    }
+    .usebutton{
+       
+        height: 15px;
+        padding: 5px;
+      
+        width: 70px;
+        font-size: 0.4rem;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,0);
+
+
+
+    }
+    
+
+  }
