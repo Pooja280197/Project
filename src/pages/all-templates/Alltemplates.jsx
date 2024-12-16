@@ -36,10 +36,12 @@ const handleclick=((template)=>{
 })
 
   return (
-    <div >
+    <>
     <Header/>
+    <div className='temps'>
       <div className='allheading'  data-aos="fade-up">
         <h1>Choose any template and create a resume in minutes</h1>
+        <p>Pick the one that fits your style, fill in your details, and download your resume in just a few clicks. It's fast, simple, and tailored to help you stand out.</p>
       </div>
       <div className='alltemps'  data-aos="fade-up">
       {templates.map((template, index) => (
@@ -49,8 +51,9 @@ const handleclick=((template)=>{
         </div>
       ))}
       </div>
+      </div>
 
-    </div>
+    </>
   )
 }
 
