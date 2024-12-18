@@ -1,145 +1,158 @@
-.template1{
-    --background: rgba(1, 45, 58, 0.925);
-}
-    
-   
+.a4size{
+  width: 210mm;
+  height: 297mm;
+  background-color: white;
+  margin: 0; /* Remove any extra margins */
+  box-shadow: none; /* Remove shadow for print */
+  --background: rgba(1, 45, 58, 0.925);
 
-  
-.a4page {
+}
+
+  .a4size{
     width: 210mm;
     height: 297mm;
-    margin: 10px auto; /* Center the page horizontally */
-    /* padding: 20mm; */
-     /* Add padding for content */
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    font-family: "Work Sans", sans-serif;
+    background-color: white;
+    margin: 0; /* Remove any extra margins */
+    box-shadow: none; /* Remove shadow for print */
+    --background: rgba(1, 45, 58, 0.925);
+  
+  }
+.template1{
+  display: flex;
+  
 }
-@media print {
-    .a4-page {
-        width: 210mm;
-        height: 297mm;
-        margin: 0; /* Remove any extra margins */
-        box-shadow: none; /* Remove shadow for print */
-    }
-}
-.t1leftside{
-    position: absolute;
-    height:297mm;
-    width: 70mm;
-    
-
+ .t1left-content{
+    height: 297mm;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
     background-color: var(--background);
-    /* background-color: rgba(0, 73, 80, 0.925); */
-}
-.t1contact{
-    position: absolute;
-    text-align: left;
     color: white;
-    margin: 50px 20px;
-    line-height: 25px;
-}
-.t1contact i{
-    font-style: normal;
-    font-size: 13px;
-    
-    
-}
-.template1 h3{
-    text-decoration: underline;
-    font-size: 25px;
-    /* margin-left: 30px; */
-    /* color: white; */
-}
-.t1leftside p{
-    font-size: 13px;
-    margin-top: 15px;
-}
-.t1tech{
+    width: 37%;
+    padding:2%;
+  }
+ 
+  .t1right-content{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 63%;
+    row-gap: 20px;
 
-    /* position: absolute; */
-    text-align: left;
-    color: white;
-    margin: 270px 0px;
-    
-}
-.t1tech h3{
-    margin-left: 20px;
-}
-.t1tech ul{
-    font-size: 14px;
-    text-align: left;
-    list-style: none;
-    
-}
-.t1tech li{
-    margin-top: 15px;
-    margin-left: 18px;
-}
-.t1lang{
-    margin-top: 40px;
-}
-.t1lang ul{
-    list-style: none;
-}
-.t1skills{
-    margin-top: 40px;
-}
-.t1rightside{
-    position: absolute;
-    height:297mm;
-    width: 124mm;
-    /* background-color: brown; */
-    margin-left: 290px;
-    color: var(--background);
-}
-.t1head{
-    margin: 20px 0px 10px 0px;
-    background-color: rgba(239, 239, 239, 0.652);
-    height: 35mm;
+  }
+  .temp1-name{
     text-align: center;
+    height: 35mm;
+    background-color: rgba(239, 239, 239, 0.652);
     padding: 25px;
-
-}
-.t1head h2{
-     font-weight: 400;
-     margin-top: 5px;
-     
-}
-.t1rightside h3{
-   margin-top: 20px;
-
-}
-.t1obj p{
-    font-size: 14px;
-}
-.t1exp{
-    margin-top: 10px;
-    display: inline-block;
-    
-}
-.t1expdesc{
-    font-size: 14px;
-}
-.t1edu {
-    margin-top: 8px;
-}
-.t1edu p{
-    font-size: 17px;
-}
-.t1project h4{
-    margin-top: 15px;
-}
-.t1ptech{
+  }
+ 
+  .template-project-tech{
     font-size: 18px;
     font-weight: 600;
-}
-.template1 h3{
-    margin-top: 10px;
+  }
+  .a4size h3{
+    font-size: 25px;
     font-weight: 600;
-}
+  }
+  .a4size ul{
+    margin-top: 10px;
+    list-style: none;
+  }
+  .a4size li{
+    line-height: 25px;
+    font-size: 14px;
+  }
+  .a4size h2{
+    
+    font-weight: 400;
+  }
+  .a4size p{
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 800px), print and (max-width: 800px) {
+    .a4size{
+      width: 50vw;
+      height:70vw ;
+      background-color: white;
+      margin: 0 auto; /* Remove any extra margins */
+      box-shadow: none; /* Remove shadow for print */
+      --background: rgba(1, 45, 58, 0.925);
+    
+    }
+    .contact{
+      margin-top: 1vw;
+    }
+    .contact li{
+      margin-top: 1vw;
+    }
+    .t1left-content{
+      height: 100%;
+      row-gap: 15px;
+      background-color: var(--background);
+      color: white;
+      width: 37%;
+      padding:2%;
+    }
+
+    .t1right-content{
+      display: flex;
+      flex-direction: column;
+      padding: 2%;
+      width: 63%;
+      row-gap: 1.5vw;
+  
+    }
+    .template-project-tech{
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .temp1-name{
+      text-align: center;
+      height: 8vw;
+      background-color: rgba(239, 239, 239, 0.652);
+      padding: 2vw;
+    }
+      
+    .a4size h3{
+      font-size: 1.4vw;
+      font-weight: 600;
+    }
+    .a4size ul{
+      margin-top: 1.25vw;
+      list-style: none;
+    }
+    .a4size li{
+      line-height: 0.7vw;
+      font-size: 0.9vw;
+    }
+    .a4size p{
+      font-size: 0.8vw;
+    }
+ 
+    .a4size h1{
+      font-size: 2vw;
+    }
+    .a4size h2{
+      font-size: 1.5vw;
+    }
+    .a4size h4{
+      font-size: 1vw;
+    }
+    .a4size h5{
+      font-size: 0.9vw;
+    }
+    
 
 
+ 
+
+  }
+  @media  only screen and (max-width: 400px){
+
+  }
+  
 
 
 
