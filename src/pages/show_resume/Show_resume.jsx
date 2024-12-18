@@ -22,8 +22,8 @@ function Show_resume() {
   const ids = userids.state.userid;
   console.log(ids);
 useEffect(()=>{
-  // axios.get(`https://66a495bb5dc27a3c190945ee.mockapi.io/template/${ids}`)
-  axios.get(`https://66a495bb5dc27a3c190945ee.mockapi.io/template/1`)
+  axios.get(`https://66a495bb5dc27a3c190945ee.mockapi.io/template/${ids}`)
+  // axios.get(`https://66a495bb5dc27a3c190945ee.mockapi.io/template/1`)
   .then((res)=>{
       console.log(res.data)
       setData(res.data)
