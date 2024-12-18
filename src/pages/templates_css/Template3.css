@@ -1,125 +1,67 @@
-.template3{
-
-
+ 
+.temp3-name{
+    padding: 15px;
+    padding-bottom: 5px;
+    text-align: center;
 }
-.a4page {
-    width: 210mm;
-    height: 297mm;
-    margin: 10px auto; /* Center the page horizontally */
-    /* padding: 20mm; */
-     /* Add padding for content */
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    font-family: "Work Sans", sans-serif;
-    position: relative;
+.temp3-name h2{
+    color: grey;
+    font-weight: 600;
 }
-@media print {
-    .a4-page {
-        width: 210mm;
-        height: 297mm;
-        margin: 0; /* Remove any extra margins */
-        box-shadow: none; /* Remove shadow for print */
+.temp3-contact ul{
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 15px;
+    margin: 0;
+    /* row-gap: 5px; */
+}
+.temp3-contact li{
+    font-size: 14px;
+    /* margin-left: 12px; */
+   
+}
+.temp3-main-content{
+    padding: 15px;
+    /* margin-top: 15px; */
+    text-align: left;
+}
+.template3 h3{
+    padding: 2px;
+    margin-top: 15px;
+    font-size:18px ;
+    background-color: rgba(209, 209, 209, 0.811);
+}
+.temp3-skills{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 800px), print and (max-width: 800px){
+    .temp3-name{
+        padding: 5px;
+        padding-bottom: 2px;
+        text-align: center;
+    }
+    .temp3-contact li{
+        font-size: 0.8vw;
+        /* margin-left: 12px; */
+       
+    }
+    .template3 h3{
+        padding: 1px;
+        margin-top: 0.4vw;
+        font-size: 1vw;
+       
+    }
+    .temp3-main-content{
+        padding: 5px;
+        /* margin-top: 15px; */
+        text-align: left;
+    }
+    .temp3-skills li{
+        line-height: 1.2vw;
     }
 }
-
-.t3upper{
-    width: 170mm;
-    position: absolute;
-    margin-top:40px ;
-     margin-left: 10%;
-     text-align: center;
-     line-height: 20px;
-      
-}
-.t3upper i{
-    /* margin-top: 20px; */
-    margin-left: 15px;
-}
-.t3upper h3{
- margin-top: 10px;
-    color: rgb(84, 83, 82);
-    font-weight: 500;
-}
-.t3name{
-    color: rgba(24, 23, 23, 0.878);
-}
-.t3contact{
-    margin-top: 10px;
-}
-.t3lower{
-    margin-left: 25px;
-    position: absolute;
-    margin-top: 160px;
-    text-align: left;
-}
-.t3heading{
-    
-    color: rgba(24, 23, 23, 0.878);
-    font-size: 17px;
-    margin-left: 10px;
-    margin-top: 10px;
-    font-weight: 600;
-    background-color: rgba(209, 209, 209, 0.279);
-
-}
-.t3obj{
-    padding: 10px;
-    margin-top: 5px;
-    width: 200mm;
-    border-left: 2px solid  rgb(137, 136, 136);
-    font-size: 14px;
-
-}
-.t3para{
-    font-size: 14px;
-    font-weight: 100;
-
-}
-.t3description{
-    padding-left: 10px;
-    padding-top: 5px;
-    margin-top: 5px;
-    width: 200mm;
-    border-left: 2px solid  rgb(137, 136, 136);
-    
-}
-.t3head4{
-    margin-top: 10px;
-    font-size: 16px;
-    color:rgba(21, 21, 21, 0.832); ;
-
-}
-.t3head5
-{
-    font-size: 14px;
-    color:rgba(40, 40, 40, 0.89) ;
-
-}
-.t3skills{
-    margin-top: 10px;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 200px;
-    /* border-left: 2px solid  rgb(137, 136, 136); */
-}
-.t3skills ul{
-    /* border-left: 2px solid  rgb(137, 136, 136); */
-
-}
-.t3li{
-
-    padding-top: 5px;
-    line-height: 20px;
-    list-style: none;
-    text-align: left;
-    font-size: 14px;
-    margin-left: 13px;
-    
-}
-.t3tech{
-    border-left: 2px solid  rgb(137, 136, 136);
-}
-
-
-

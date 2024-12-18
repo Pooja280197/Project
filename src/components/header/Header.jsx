@@ -1,12 +1,19 @@
-import React from "react";
+import React,{useState} from "react";
 import "../header/Header.css";
 import logo from "../../assets/icons and logo/logo.png";
 import menu from "../../assets/icons and logo/menu.png";
+import closeMenu from '../../assets/icons and logo/close.png'
 import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <header>
@@ -14,12 +21,16 @@ function Header() {
           <img src={logo} />
         </div>
         <div className="nav-options">
-          <ul>
           
-            {/* <img className="menu" src={menu} alt="menu option" /> */}
-
+          
+        <div className="menu" onClick={toggleMenu}>
+        <img src={isMenuOpen ? closeMenu : menu} alt="Menu" />
+      </div>
+      <nav className={`nav-options ${isMenuOpen ? "open" : ""}`}/>
+      <ul>
             {
-              location.pathname === "/" ? (<ul>
+              location.pathname === "/" && (
+                <>
                 <li>
                 <ScrollLink to="home" smooth={true} duration={500}  offset={-100}>
                   Home
@@ -37,13 +48,29 @@ function Header() {
                   Features
                 </ScrollLink>
                  </li>
+                 </>
+              )
+            }
+            </ul>
+               
+                { ((location.pathname === "/alltemplates" ||location.pathname === "/Resume")  &&(  <ul><li> <RouterLink to="/" style={{ color: "inherit", textDecoration: "none" }}>Home</RouterLink></li>
+              </ul>))
+}
+              
+             
+              {(location.pathname === "/Form" &&( <ul> <li><RouterLink to="/" style={{ color: "inherit", textDecoration: "none" }}>Home</RouterLink></li>
+                <li><RouterLink to="/alltemplates" style={{ color: "inherit", textDecoration: "none" }}>Templates</RouterLink></li>
+                </ul>
+              ))
+            }
                
                 
 
-              </ul>):( <RouterLink to="/" style={{ color: "inherit", textDecoration: "none" }}>Home</RouterLink>
-              )
-            }
-          </ul>
+              
+              
+            
+
+          
         </div>
       </header>
     </>

@@ -70,7 +70,15 @@
   .a4size p{
     font-size: 14px;
   }
-
+  .a4size h4{
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .a4size h5{
+    font-size: 16px;
+    font-weight: 600;
+  }
   @media screen and (max-width: 800px), print and (max-width: 800px) {
     .a4size{
       width: 50vw;
@@ -138,20 +146,20 @@
       font-size: 1.5vw;
     }
     .a4size h4{
+      margin-top: 2px;
       font-size: 1vw;
     }
     .a4size h5{
       font-size: 0.9vw;
     }
+  
     
 
 
  
 
   }
-  @media  only screen and (max-width: 400px){
 
-  }
   
 
 

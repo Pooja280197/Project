@@ -10,6 +10,7 @@ import temp4 from '../../assets/images/Template4.jpg';
 import temp5 from '../../assets/images/Template5.jpg';
 import temp6 from '../../assets/images/Template6.jpg';
 import temp7 from '../../assets/images/Template7.jpg';
+import Footer from '../../components/footer/Footer'
 
 // import Aos from 'aos';
  
@@ -52,6 +53,7 @@ const handleclick=((template)=>{
       ))}
       </div>
       </div>
+      
 
     </>
   )

@@ -1,30 +1,29 @@
 import React from 'react'
-import temp2 from '../../pages/templates_css/Template2.module.css'
+import '../templates_css/Template2.css'
+
+
 
 function Template2({ value }) {
   return (
     <>
-      <div className={`${temp2.a4page} ${temp2.template2}`} id='template1'>
-      
-      
-          <div className={temp2.upper}>
-            <h1 className={temp2.name}>{value.fname} {value.lname}</h1>
-            <p className={temp2.prof}>{value.profession}</p>
-            <p style={{ marginTop: "10px", fontSize: '15px' }}>{value.objective}</p>
-          </div>
-          <div className={temp2.contact}>
-            <i class="fi fi-tr-mobile-button ">   {value.contact}</i>
-            <i class="fi fi-rr-envelope">    {value.email}</i>
-            <i class="fi fi-ss-marker">    {value.address}</i>
-            <i class="fi fi-brands-linkedin">    {value.linkedin}</i>
-          </div>
-          <div className={temp2.lower}>
-            
-            <div className={temp2.tech}>
-              <p className={temp2.heading}>Technical Skills</p>
-              <hr />
-
-              {value.techskills.map((item) => {
+    <div className='a4size template2' id='template2'>
+      <div className='temp2-name'>
+      <h1>{value.fname} {value.lname}</h1>
+      <h2>{value.profession}</h2>
+      <p>{value.objective}</p>
+     </div>
+     <div className='temp2-contact'>
+      <ul>
+         <li><i class="fi fi-tr-mobile-button ">   {value.contact}</i></li>
+            <li><i class="fi fi-rr-envelope">    {value.email}</i></li>
+            <li><i class="fi fi-ss-marker">    {value.address}</i></li>
+            <li><i class="fi fi-brands-linkedin">    {value.linkedin}</i></li>
+            </ul>
+     </div>
+     <div>
+      <h3>Technical Skills</h3>
+      <hr/>
+      {value.techskills.map((item) => {
                 return (
                   <ul>
                     <li>{item.techskill}</li>
@@ -32,79 +31,87 @@ function Template2({ value }) {
                 )
 
               })}
-            </div>
-            
-           
-            <div className={temp2.exp}>
-              <p className={temp2.heading}>Experience</p>
-              <hr />
+     </div>
+     <div>
+     <h3>Experience</h3>
+     <hr />
               {
                 value.experience.map((items) => {
                   return (
                     <>
-                      <h4 className={temp2.head1}>{items.jobprofile} , ({items.from}-{items.to})</h4>
-                      <h5 className={temp2.head2}>{items.company},{items.city}</h5>
-                      <p className={temp2.desc}>{items.description}</p>
+                      <h4>{items.jobprofile} , ({items.from}-{items.to})</h4>
+                      <h5>{items.company},{items.city}</h5>
+                      <p>{items.description}</p>
 
                     </>
 
                   )
                 })
               }
-            </div>
-            <div className={temp2.edu}>
-              <p className={temp2.heading}>Education</p>
-              <hr />
+
+     </div>
+     <div>
+     <h3>Education</h3>
+     <hr />
               {
                 value.education.map((items) => {
                   return (
                     <>
-                      <h4 className={temp2.head1}>{items.degree},{items.year}</h4>
-                      <p className={temp2.desc}>{items.college},{items.university}</p>
+                      <h4>{items.degree},{items.year}</h4>
+                      <p>{items.college},{items.university}</p>
                     </>
                   )
 
                 })
               }
 
-            </div>
-            <div className={temp2.project}>
-            <p className={temp2.heading}>Project</p>
-            <hr/>
+
+     </div>
+     <div>
+     <h3>Project</h3>
+     <hr/>
             {
                   value.project.map((items)=>{
                      return(
                       <>
-                      <h4 className={temp2.head1}>{items.pname}</h4>
-                      <p className={temp2.technology}>Technologies used:{items.ptech}</p>
-                      <p className={temp2.desc}>{items.pdesc}</p>
+                      <h4>{items.pname}</h4>
+                      <p className='template-project-tech'>Technologies used:{items.ptech}</p>
+                      <p>{items.pdesc}</p>
                       </>
                      )
                   })
                 }
-            </div>
-            <div>
-            <p className={temp2.heading}>Skills</p>
-            <hr/>
+            
+     
+     </div>
+     <div>
+      <h3>Soft-Skills</h3>
+      <hr/>
+      <ul>
             {
               value.skills.map((items)=>{
                 return(
-                  <tr>
-                    <td className={temp2.desc}>{items.skill}</td>
+               
+                    <li>{items.skill}</li>
                     
-                  </tr>
+                 
                 )
 
               })
             }
-            </div>
+             </ul>
+            
+
+     </div>
 
 
-          </div>
+    </div>
       
-
-
-      </div>
+            
+           
+           
+         
+          
     </>
   )
 }

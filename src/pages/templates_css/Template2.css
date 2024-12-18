@@ -1,0 +1,84 @@
+.template2{
+    padding: 15px;
+
+}
+.temp2-name h2{
+    color: rgba(126, 3, 3, 0.86);
+    font-weight: 600;
+    
+    
+}
+.temp2-contact{
+    background-color:  rgba(126, 3, 3, 0.86);
+    padding: 0;
+    color: white;
+    margin-top: 5px;
+    
+}
+.temp2-contact ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.temp2-contact li{
+    font-size: 12px;
+    /* margin-left: 12px; */
+   
+}
+.template2 h3{
+    margin-top: 10px;
+    font-size:22px ;
+    color: rgba(126, 3, 3, 0.86); ;
+}
+.template2 li{
+    margin: 0;
+    line-height: 18px;
+}
+.template2 ul{
+    margin: 0;
+}
+.template2 hr{
+    margin: 0;
+    opacity: 0.2;
+}
+@media screen and (max-width: 800px), print and (max-width: 800px) {
+    .template2{
+        padding: 5px;
+    
+    }
+    .temp2-contact{
+        background-color:  rgba(126, 3, 3, 0.86);
+        text-align: center;
+        /* height: 20px; */
+        padding: 0px;
+        color: white;
+        margin-top: 2px;
+        
+    }
+  
+    .temp2-contact li{
+        font-size: 0.6vw;
+        margin-left: 0.5vw;
+    
+    }
+    .template2 h3{
+        margin-top: 0.5vw;
+        font-size: 1.4vw;
+        font-weight: 600;
+      }
+      .template2 li{
+        margin: 0;
+        line-height: 5px;
+    }
+    .template2 ul{
+        margin: 0;
+    }
+    .template2 li{
+        margin: 0;
+        line-height: 1.2vw;
+    }
+   
+
+
+
+}

@@ -1,106 +1,116 @@
 .template6{
     --color:rgba(211, 94, 27, 0.893);
     display: flex;
-    flex-direction: column;
+    
     }
   
-    .t6left{
-        position: absolute;
+    .temp6-left{
         height: 297mm;
-        width: 70mm;
+        width: 32%;
         background-color: rgba(235, 229, 229, 0.86);
-        padding: 20px;
+        padding: 0 10px;
 
     }
-    .t6leftdata{
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
-    }
-    .t6right{
-        margin-left: 70mm;
-        position: absolute;
-        height: 297mm;
-        padding: 20px;
-    }
-  
-    .t6leftdata img{
+    .temp6-left img{
+        display: block;
+        margin:5px 35px;
         height: 150px;
         border-radius: 50%;
         border: 1px solid black;
         
     }
-    .t6image{
-        margin-left: 20px;
+    .temp6-contact li{
+        font-size: 12px;
     }
-    .t6name p{
-        margin-top: 15px;
-         font-size: 14px;
-    }
-    .t6name {
-        margin-top: 10px;
-         line-height: 20px;
-    }
-    .t6name h3{
+    .template6 h3{
         color: var(--color);
-    }
-    .t6heading{
-        color: var(--color);
-        font-size: 18px;
+        font-size: 25px;
         font-weight: 600;
-        margin-top: 40px;
+        margin-top: 20px;
         
      }
-     .t6contact{
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        line-height: 20px;
-        font-size: 13px;
-        font-weight: 100;
-        font-style: normal;
+     .temp6-right{
+        padding: 0 10px;
+        margin-left: 10px;
      }
-     .t6contact i{
-        margin-top: 8px;
+     
+
+     .template6 h2{
+        color: var(--color);
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        
+        
      }
-   
-    
-     .t6skills ul{
+     @media screen and (max-width: 800px), print and (max-width: 800px) {
+        .a4size{
+            width: 50vw;
+            height:70vw ;
+            background-color: white;
+            margin: 0 auto; /* Remove any extra margins */
+            box-shadow: none; /* Remove shadow for print */
+            --background: rgba(1, 45, 58, 0.925);
+          
+          }
+           
+    .temp6-left{
+        height:70vw ;
+        padding: 0 5px;
+
+    }
+        
+        .temp6-left img{
+            margin:1vw 2vw;
+            padding: 0px 0px;
+            height: 8vw;
+            border-radius: 50%;
+            border: 1px solid black;
+            
+        }
+        .template6 h3{
+            color: var(--color);
+            font-size: 1.4vw;
+            font-weight: 600;
+            margin-top: 5px;
+            
+         }
+         .temp6-contact li{
+         
+            font-size: 0.4vw;
+        }
+        
+     .template6 h2{
+        font-size: 1.5vw;
+        font-weight: 600;
+        margin-bottom: 2px;
+        
+        
+     }
+     .temp6-right{
+        padding: 0 2px;
+        margin-left: 2px;
+     }
+     .template6 ul{
+        margin-top: 0.5vw;
         list-style: none;
-        margin-left: 0px;
-       
-     }
-     .t6skills li{
-        font-size: 14px;
-        font-weight: 100;
-       list-style: none;
-       text-align: left;
-       line-height: 20px;
-       margin-left: 15px;
-     }
-     .t6rightdata{
-        margin-top: 55px;
+      }
+      .template6 li{
+        line-height: 1.2vw;
+        font-size: 0.9vw;
+      }
+      .temp6-contact li{
+         
+        font-size: 0.7vw;
+    }
+    
 
      }
-     .t6head4{
-        margin-top: 10px;
-        font-size: 16px;
-        color:rgba(21, 21, 21, 0.832); ;
+
+ 
+
+   
     
-    }
-    .t6head5
-    {
-        font-size: 14px;
-        color:rgba(40, 40, 40, 0.89) ;
-    
-    }
-    .t6para{
-        
-            font-size: 14px;
-            font-weight: 100;
-        
-        
-    }
-    .t6name h3{
-        margin-top: 10px;
-    }
+   
+  
+  

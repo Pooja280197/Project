@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useDispatch,useSelector } from 'react-redux'
 import {sendApiData} from '../../redux/Action'
 import axios from 'axios'
+import Header from '../header/Header'
 
 
 function Form() {
@@ -235,10 +236,13 @@ function Form() {
 
     return (
         <>
-        
-        <div className="container grid-container">
-          <h1 className='formhead'>Please fill in this form to create Resume.</h1>
-      
+        <Header/><div className='grid-container'>
+
+        <div className="container">
+          <h1 className='formhead'>Please fill in this form to Create Resume.</h1>
+          <p className='formhead'>Provide essential information to help employers identify and contact you. Ensure all details are accurate and up-to-date!Add as many skills, experiences, and projects as you need. Our dynamic form ensures every detail is covered and keeps your resume sleek and professional.</p>
+          
+         
           <form onSubmit={dataadd}>
             <div className="formblock details">
               <div>
@@ -703,7 +707,7 @@ function Form() {
       
             <input type="submit" className="registerbtn" />
           </form>
-        </div>
+          </div> </div>
       </>
       
     )

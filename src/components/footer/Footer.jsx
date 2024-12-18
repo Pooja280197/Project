@@ -7,6 +7,7 @@ const Footer = () => {
    <>
    <div className='footer'>
     <h1>Quick Resume</h1>
+    <hr/>
     <p>quickresume.com</p>
     
      

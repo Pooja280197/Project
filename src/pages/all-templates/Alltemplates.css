@@ -7,6 +7,7 @@
     padding:0 40px;
 }
 .allheading h1{
+    
 
 }
 .allheading p{
@@ -50,8 +51,8 @@
 }
 .containers img{
     box-shadow: 2px 5px 8px rgba(2, 117, 194, 0.927); ;
-    height: 80vh;
-    width: 30vw;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -110,12 +111,7 @@
      
         
     }
-    .containers img{
-        box-shadow: 2px 5px 8px rgba(2, 117, 194, 0.927); ;
-        height: 30vh;/* height: 250px;
-        width: 200px; */
-        width: 35vw;
-    }
+  
     .usebutton{
        
         height: 15px;
@@ -149,12 +145,7 @@
         
         
     }
-    .containers img{
-        box-shadow: 2px 5px 8px rgba(2, 117, 194, 0.927); ;
-        height: 30vh;/* height: 250px;
-        width: 200px; */
-        width: 40vw;
-    }
+  
     .usebutton{
        
         height: 15px;
@@ -183,12 +174,7 @@
      
         
     }
-    .containers img{
-
-        height: 40vh;/* height: 250px;
-        width: 200px; */
-        width: 25vw;
-    }
+   
     .usebutton{
        
         height: 15px;
@@ -210,18 +196,13 @@
     .containers{
        
         display: flex;
-        height:55vh;
-        width: 20vw;
+        height:75%;
+        width: 25%;
         
      
         
     }
-    .containers img{
-
-        height: 55vh;/* height: 250px;
-        width: 200px; */
-        width: 20vw;
-    }
+  
     .usebutton{
        
         height: 15px;
